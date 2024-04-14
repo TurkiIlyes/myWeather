@@ -1,6 +1,6 @@
 .ErrorAlert {
-    background-color: var(--self-color);
-    border: 3px solid var(--secondary-color);
+    background-color: var(--selected-col);
+    border: 3px solid var(--secondary-col);
     display: none;
     align-items: center;
     justify-content: center;
@@ -14,7 +14,7 @@
 }
 
 .ErrorAlert span {
-    color: var(--main-color);
+    color: var(--text-pal-two-col);
     font-weight: 600;
     font-size: 18px;
     text-transform: uppercase;
