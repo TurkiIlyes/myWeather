@@ -1,0 +1,17 @@
+.TodayDetails {
+    /* padding: 10px; */
+}
+
+.TodayDetails>div {
+    padding: 0 5px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+@media (min-width:767px) {
+    .TodayDetails {
+        display: grid;
+        grid-template-columns: 50% 50%;
+    }
+}

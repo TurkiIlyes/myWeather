@@ -1,0 +1,33 @@
+.ErrorAlert {
+    background-color: var(--self-color);
+    border: 3px solid var(--secondary-color);
+    display: none;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    width: 80%;
+    height: 100px;
+    border-radius: 10px;
+    left: 10%;
+    top: 15%;
+    animation: Error-pop-up 2s infinite linear alternate-reverse;
+}
+
+.ErrorAlert span {
+    color: var(--main-color);
+    font-weight: 600;
+    font-size: 18px;
+    text-transform: uppercase;
+}
+
+@keyframes Error-pop-up {
+
+    0%,
+    100% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.1);
+    }
+}

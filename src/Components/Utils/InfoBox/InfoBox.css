@@ -1,0 +1,47 @@
+.InfoBox {
+    /* background-color: var(--secondary-color); */
+    background-color: var(--main-col);
+    padding: 20px 15px;
+    border-radius: 7px;
+    margin: 10px 0 0;
+    width: 48.5%;
+    position: relative;
+    height: 130px;
+}
+
+.InfoBox h3 {
+    font-size: 20px;
+    font-weight: 600;
+    color: var(--self-color);
+    text-transform: capitalize;
+}
+
+.InfoBox .inside-box {
+    /* background-color: aqua; */
+    padding: 10px;
+    inset: 7px;
+    border-radius: 5px;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    justify-content: center;
+    /* background-color: var(--main-color); */
+    /* box-shadow: 0 0 10px var(--self-color); */
+}
+
+.InfoBox .data-box {
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.InfoBox .data-box .data-icon {
+    font-size: 30px;
+}
+
+.InfoBox .data-box span {
+    font-size: 26px;
+    color: var(--text-color);
+}

@@ -1,0 +1,17 @@
+.Footer {
+    /* background-color: var(--secondary-color); */
+    background-color: var(--main-col);
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* box-shadow: 0 0 10px var(--main-color); */
+    position: relative;
+    z-index: 5;
+}
+
+.Footer span {
+    font-size: 24px;
+    font-weight: 700;
+    color: var(--text-col);
+}

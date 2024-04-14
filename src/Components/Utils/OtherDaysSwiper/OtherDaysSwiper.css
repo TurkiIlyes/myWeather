@@ -1,0 +1,170 @@
+.OtherDaysSwiper {
+    width: 100%;
+    background-color: var(--main-col);
+
+}
+
+@media (max-width:991px) {
+    .OtherDaysSwiper {
+        margin: 20px 0;
+        /* padding: 10px 0; */
+    }
+}
+
+@media (min-width:992px) {
+    .OtherDaysSwiper {
+        border-radius: 10px;
+        width: calc(100% - 14px);
+        /* width: 65vw; */
+    }
+}
+
+.other-days-slide {
+    margin: 30px 10px 15px;
+    width: 85% !important;
+    height: 180px !important;
+}
+
+@media (min-width:768px) {
+    .other-days-slide {
+        /* margin: 20px 5px; */
+        width: 50% !important;
+        height: 190px !important;
+    }
+}
+
+@media (min-width:992px) {
+    .other-days-slide {
+        margin: 30px 10px;
+        width: 40% !important;
+        height: 195px !important;
+        position: relative;
+        border-radius: 10px;
+    }
+}
+
+.other-days-slide .bg-style {
+    position: absolute;
+    z-index: 1;
+    background-color: var(--secondary-col);
+    clip-path: polygon(85% 45%, 90% 50%, 100% 60%, 100% 85%, 100% 100%, 0 100%, 0 0, 28% 1%, 75% 37%);
+    width: calc(100% - 20px);
+    height: 100%;
+    width: 100%;
+    border-radius: 50px;
+    border: 4px solid var(--selected-col);
+}
+
+
+.other-days-slide .content {
+    width: 100%;
+    height: 100%;
+}
+
+.other-days-slide .content>div {
+    position: relative;
+    z-index: 2;
+    height: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 34px 0 24px;
+}
+
+
+.other-days-slide .content .data-content span {
+    font-size: 50px;
+    color: var(--text-col);
+}
+
+.other-days-slide .content .data-content img {
+    width: 150px;
+    margin-right: 0px;
+    margin-bottom: 40px;
+}
+
+.other-days-slide .img-rot {
+    animation: weather-img-an1 6s infinite linear;
+}
+
+.other-days-slide .img-pop-up {
+    animation: weather-img-an2 1s infinite linear alternate-reverse;
+}
+
+.other-days-slide .content .text-content div {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+    width: 65%;
+    padding-left: 5px;
+}
+
+
+
+
+
+
+.other-days-slide .content .text-content span {
+    color: var(--text-col);
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 2;
+    text-transform: capitalize;
+}
+
+.other-days-slide .content .text-content>span {
+    color: var(--text-pal-three-col);
+    text-align: center;
+    font-size: 14px;
+    width: 40%;
+}
+
+@media (min-width:992px) {
+    .other-days-slide .content .data-content span {
+        font-size: 60px;
+    }
+
+    .other-days-slide .content .data-content img {
+        width: 150px;
+    }
+
+    /* .other-days-slide .content .text-content span {
+        font-size: 18px;
+    }
+
+    .other-days-slide .content .text-content>span {
+        font-size: 14px;
+    } */
+}
+
+.other-days-slide .currentDay {
+    background-color: var(--selected-col) !important;
+    border: 4px solid var(--secondary-col) !important;
+}
+
+.other-days-slide .currentDayText span {
+    /* color: #363676 !important;
+    color: var(--text-col) !important; */
+}
+
+@keyframes weather-img-an1 {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    0% {
+        transform: rotate(-360deg);
+    }
+
+}
+
+@keyframes weather-img-an2 {
+    0% {
+        transform: scale(0);
+    }
+
+    0% {
+        transform: scale(1.1);
+    }
+
+}

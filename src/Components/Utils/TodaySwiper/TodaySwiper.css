@@ -1,0 +1,55 @@
+.today-swiper {
+    width: 100%;
+    /* box-shadow: inset 0 0 5px var(--main-color); */
+    /* border-radius: 10px; */
+}
+
+.Today-swiper-slide {
+    width: 90px !important;
+    height: 85% !important;
+    padding: 3px 0;
+}
+
+.swiper-slide .hourly-info {
+    margin-top: 15px;
+    width: 90%;
+    height: 100%;
+    padding: 7px 0;
+    /* object-fit: cover; */
+    border-radius: 7px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    /*  */
+    /* background-color: var(--selected-col) !important;
+    border: 1px solid var(--secondary-col); */
+    background-color: var(--secondary-col);
+    /* border: 1px solid var(--selected-col) !important; */
+    /*  */
+    /* box-shadow: 0 0 3px var(--selected-col); */
+
+}
+
+.swiper-slide .hourly-info span {
+    font-size: 22px;
+    color: var(--text-color);
+}
+
+.swiper-slide .hourly-info img {
+    width: 100%;
+    height: auto;
+
+}
+
+.currentHour {
+
+    /*  */
+    /* background-color: var(--secondary-col);
+    border: 1px solid var(--selected-col); */
+    background-color: var(--selected-col) !important;
+    /* border: 1px solid var(--secondary-col) !important; */
+    /*  */
+    /* box-shadow: 0 0 3px var(--self-color) !important; */
+}
